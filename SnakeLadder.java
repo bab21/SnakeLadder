@@ -10,12 +10,18 @@ public class SnakeLadder{
 		
 		int min=1;
 		int max=6;
+		// number of times dice was rolled...
+		int num_times=0;
+		
 		
 		
 		while(pos_player1!=100){
-			
+		
+		System.out.println("Position after current update-- "+pos_player1);
+		
 		// first_player_value is dice played by fisrt player
 		int first_player_value=(int)(Math.random()*(max-min+1)+min);
+		num_times++;
 		// choice1  is player 1 for any number between 0-2 
 		int choice1=(int)(Math.random()*(3)+0);
 		if(choice1==LADDER)
@@ -25,6 +31,9 @@ public class SnakeLadder{
 		else if(choice1==NO_PLAY)
 			pos_player1=pos_player1+0;
 		}
+		
+		System.out.println("Number of times dice played  "+num_times);
+		
 		
 	}
 }
