@@ -14,6 +14,8 @@ public class SnakeLadder{
 		
 		// first_player_value is dice played by fisrt player
 		int first_player_value=(int)(Math.random()*(max-min+1)+min);
+		// choice1  is player 1 for any number between 0-2 
+		int choice1=(int)(Math.random()*(3)+0);
 		
 		
 	}
